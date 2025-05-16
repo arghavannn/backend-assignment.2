@@ -3,7 +3,7 @@ import { DATABASE_URL } from "./config.js";
 
 import Parser from "rss-parser";
 const parser = new Parser();
-
+/* I USE AI IN THIS PART BECAUSE CALLING FROM DATABASE WAS NEW FOR US AND TEACHER KET US TI USE AI*/
 const { Pool } = pkg;
 const pool = new Pool({
     connectionString: DATABASE_URL,

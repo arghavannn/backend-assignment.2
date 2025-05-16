@@ -1,4 +1,4 @@
-import { getRSSFeeds, getRecipients } from "./db.js";
+import { getRSSFeeds, getRecipients } from "./rss.js";
 import { fetchFeedItems } from "./rss.js";
 import { sendEmail } from "./email.js";
 

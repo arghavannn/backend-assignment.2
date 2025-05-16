@@ -6,7 +6,7 @@ import {
     MAILTRAP_PASS,
 } from "./config.js";
 
-function generateHTML(items) {
+function createHTML(items) {
     return `
     <h2>📰 Latest News</h2>
     <ul>
@@ -34,7 +34,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function sendEmail(recipients, items) {
-    const html = generateHTML(items);
+    const html = createHTML(items);
 
     const mailOptions = {
         from: '"NewsBot" <news@example.com>',
